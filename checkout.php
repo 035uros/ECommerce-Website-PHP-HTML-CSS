@@ -118,13 +118,13 @@ if($p1){
   $mail = new PHPMailer();
   $mail->SMTPDebug = false;
   $mail->isSMTP();                            // Set mailer to use SMTP 
-  $mail->Host = 'smtp.gmail.com';              // Specify main and backup SMTP servers
+  $mail->Host = ' ';              // Specify main and backup SMTP servers
   $mail->SMTPAuth = true;                             // Set mailer to use SMTP 
-  $mail->Username = 'servisi.ziptie@gmail.com'; // your email id
-  $mail->Password = 'Vasariste1!'; // your password
-  $mail->SMTPSecure = 'tls';                  
-  $mail->Port = 587;     //587 is used for Outgoing Mail (SMTP) Server.
-  $mail->setFrom('servisi.ziptie@gmail.com', 'ZIPTIE');
+  $mail->Username = ' '; // your email id
+  $mail->Password = ' '; // your password
+  $mail->SMTPSecure = ' ';                  
+  $mail->Port =  ;     //587 is used for Outgoing Mail (SMTP) Server.
+  $mail->setFrom(' ', 'ZIPTIE');
   $mail->addAddress($email);   // Add a recipient
   $mail->isHTML(true);  // Set email format to HTML
 
